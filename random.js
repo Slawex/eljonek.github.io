@@ -1,8 +1,8 @@
 $(function(){
     // Populate select inputs
-    populateSelect('#mediums', lists.mediums);
-    populateSelect('#verbs', lists.verbs);
-    populateSelect('#subjects', lists.subjects);
+    populateSelect('#ref1', lists.ref1);
+    populateSelect('#ref2', lists.ref2);
+    populateSelect('#ref3', lists.fer3);
 
     // Open list chooser
     $('.js-chooseLists').click(function(e){
@@ -25,9 +25,9 @@ function randomise() {
 	}, 0, function() {
 	});
 
-	document.querySelector('#array1').innerHTML = getRandomArrayItem(lists['mediums'][$('#mediums').val()]['data']);
-	document.querySelector('#array2').innerHTML = getRandomArrayItem(lists['verbs'][$('#verbs').val()]['data']);
-	document.querySelector('#array3').innerHTML = getRandomArrayItem(lists['subjects'][$('#subjects').val()]['data']);
+	document.querySelector('#array1').innerHTML = getRandomArrayItem(lists['ref1'][$('#ref1').val()]['data']);
+	document.querySelector('#array2').innerHTML = getRandomArrayItem(lists['ref2'][$('#ref2').val()]['data']);
+	document.querySelector('#array3').innerHTML = getRandomArrayItem(lists['ref3'][$('#ref3').val()]['data']);
 
 	$('.random').animate({
 		opacity: 1,
