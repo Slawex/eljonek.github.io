@@ -2,21 +2,7 @@ $(function(){
     // Populate select inputs
     populateSelect('#ref1', lists.ref1);
     populateSelect('#ref2', lists.ref2);
-    populateSelect('#ref3', lists.fer3);
-
-    // Open list chooser
-    $('.js-chooseLists').click(function(e){
-        if(!($('.js-wrapper--listChooser').hasClass('open'))){
-            $('.js-wrapper--listChooser').addClass('open');
-            $(this).text('Hide lists');
-        } else {
-            $('.js-wrapper--listChooser').removeClass('open');
-            $(this).text('Choose lists');
-        }
-
-        e.preventDefault();
-    });
-});
+    populateSelect('#ref3', lists.ref3);
 
 function randomise() {
 
