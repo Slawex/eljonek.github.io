@@ -1,15 +1,23 @@
-<HTML>
-	<HEAD>
-		<TITLE>Random reference generator</TITLE>
-		<link href='https://fonts.googleapis.com/css?family=Lato:300,700' rel='stylesheet' type='text/css'>
-		<link rel="stylesheet" type="text/css" href="style.css">
-
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-		<script src="data.js"></script>
-		<script src="random.js"></script>
-	</HEAD>
-	<BODY>
-    <div class="wrapper--listChooser js-wrapper--listChooser">
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
+	<meta name="msapplication-tap-highlight" content="no">
+	<meta name="theme-color" content="#1E78A9">
+	<meta name="msapplication-navbutton-color" content="#1E78A9">
+	<meta name="apple-mobile-web-app-status-bar-style" content="#1E78A9">
+	<meta name="pinterest" content="nopin">
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+	<script type="application/javascript" src="data.js"></script>
+	<script type="application/javascript" src="index.js"></script>
+	<title>Simple Image Gallery</title>
+</head>
+<body class="page">
+	<div class="wrapper--listChooser js-wrapper--listChooser">
       <div class="listChooser">
         <div class="listChooser__input">
           <label for="ref1">1st ref</label>
@@ -28,19 +36,28 @@
         </div>
       </div>
     </div>
-		<div class="container">   	
-			<ul class="random">
-				<li id="array1" class="result"><span>Generate</span></li>
-				<li id="array2" class="result"><span>random</span></li>
-				<li id="array3" class="result"><span>references</span></li>
-			</ul>
-			<div class="break"></div>
-      <!--<button class="button js-hitMe">GENERATE</button>-->
-      <input type="button" value="GENERATE" class="button" onclick="randomise();" />
 
+	<div class="page__content">
+		<div class="container container--gallery">
+
+			<div id="gallery" class="gallery">
+				<a class="gallery__controller gallery__controller--prev"></a>
+				<a class="gallery__controller gallery__controller--next"></a>
+
+				<div class="gallery__images">
+					<img src="https://picsum.photos/1000/600/?random" class="active gallery_pic">
+					<img src="https://picsum.photos/780/430/?random" class="active gallery_pic">
+					<img src="https://picsum.photos/910/450/?random" class="active gallery_pic">
+				</div>
+			</div>
+	
 		</div>
-		<footer>
-			<p><a href="http://jonnyburch.com">Jonny</a>'s Randomiser | <a href="https://github.com/jonnyburch/randomiser">GitHub</a></p>
-		</footer>
-	</BODY>
-</HTML>
+	</div>
+
+	<input type="button" value="GENERATE" class="button" onclick="randomise();" />
+
+	<footer>
+		<p><a href="http://jonnyburch.com">Eljobnek | <a href="https://github.com/Eljonek/">GitHub</a></p>
+	</footer>
+</body>
+</html>
