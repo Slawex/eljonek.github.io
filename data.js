@@ -1,19 +1,19 @@
 var lists = {
 
     ref1: [
-        {   name: 'random',
-            data: ['nobodies']
+        {   name: 'pose',
+            data: ['dancing']
         },
-        {   name: 'family',
-            data: ['asdf']
+        {   name: 'color palette',
+            data: ['blue']
         },
-        {   name: 'poop',
-            data: ['popop']
+        {   name: 'object',
+            data: ['lamp']
         }
     ],
     ref2: [
         {   name: 'random',
-            data: ['nobodies']
+            data: ['choose']
         },
         {   name: 'family',
             data: ['asdf']
