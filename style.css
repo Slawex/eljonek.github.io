@@ -231,8 +231,8 @@ textarea, input { outline: none; }
 }
 
 .wrapper--listChooser {
-  background: linear-gradient(to bottom left, #99ffcc 0%, #ffcccc 100%);
-  height: 112;
+  background: linear-gradient(to right, #99ffcc 0%, #ffcccc 100%);
+  height: 56;
 }
 
 .open {
