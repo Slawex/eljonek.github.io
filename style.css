@@ -231,7 +231,6 @@ textarea, input { outline: none; }
 }
 
 .wrapper--listChooser {
-  overflow: hidden;
   background: linear-gradient(to bottom left, #99ffcc 0%, #ffcccc 100%);
   height: 112;
 }
